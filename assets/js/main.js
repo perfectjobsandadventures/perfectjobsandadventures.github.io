@@ -68,6 +68,12 @@ document.documentElement.classList.add('js');
     menuBtn.addEventListener('click', () => setOpen(mobileNav.hidden));
     mobileNav.addEventListener('click', e => { if (e.target.closest('a')) setOpen(false); });
     addEventListener('keydown', e => { if (e.key === 'Escape' && !mobileNav.hidden) { setOpen(false); menuBtn.focus(); } });
+    // Close when focus leaves the header + menu (e.g. tabbing past the last link) or on a click/tap outside.
+    const inMenu = (el) => !!el && (header.contains(el) || mobileNav.contains(el));
+    const onFocusOut = e => { if (!mobileNav.hidden && e.relatedTarget && !inMenu(e.relatedTarget)) setOpen(false); };
+    header.addEventListener('focusout', onFocusOut);
+    mobileNav.addEventListener('focusout', onFocusOut);
+    document.addEventListener('pointerdown', e => { if (!mobileNav.hidden && !inMenu(e.target)) setOpen(false); });
   }
 
   // ---------- Reveal on scroll ----------
