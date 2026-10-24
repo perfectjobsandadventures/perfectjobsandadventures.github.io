@@ -378,9 +378,9 @@ section{position:relative;padding:clamp(4.5rem,3rem + 5vw,8.5rem) 0}
 /* ---------- Melissa ---------- */
 .melissa-grid{display:grid;gap:3rem;align-items:center}
 .melissa-frame{position:relative;max-width:440px;width:100%;margin-inline:auto}
-.melissa-photo{position:relative;aspect-ratio:4/5;border-radius:240px 240px var(--radius) var(--radius);overflow:hidden;background:var(--sky-100);width:100%;box-shadow:var(--shadow-lg);border:8px solid #fff}
-.melissa-photo picture{position:absolute;inset:0;display:block}
-.melissa-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.melissa-photo{position:relative;aspect-ratio:4/5;border-radius:240px 240px var(--radius) var(--radius);overflow:hidden;background:#b9b8a3;width:100%;box-shadow:var(--shadow-lg);border:8px solid #fff;isolation:isolate}
+.melissa-photo picture{position:absolute;inset:0;width:100%!important;height:100%!important;display:block;margin:0;padding:0;border:0}
+.melissa-photo img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0;padding:0;border:0;object-fit:cover;object-position:center 15%}
 .melissa .lead a{color:var(--pink-700);font-weight:700;text-decoration:underline;text-underline-offset:.18em}
 .melissa .lead a:hover{color:var(--ink)}
 .melissa-stamp{right:-18px;top:12%}
