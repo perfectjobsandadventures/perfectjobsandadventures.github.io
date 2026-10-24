@@ -35,9 +35,12 @@ All photos and video on this site are free-licensed stock from **Pexels**. They 
 | `reef-fish-*` | Great Barrier Reef place | https://www.pexels.com/photo/vibrant-tropical-fish-in-great-barrier-reef-australia-30086665/ | Brooke Laven | Pexels License |
 | `noosa-*` | Noosa place | https://www.pexels.com/photo/scenic-coastal-view-of-noosa-national-park-australia-30294450/ | Dillon Hunt | Pexels License |
 | `bluemtns-hiker-*` | Blue Mountains place | https://www.pexels.com/photo/hiker-on-trail-among-trees-15572193/ | Federico Abis | Pexels License |
+| `kangaroos-beach-*` | Wildlife tours trip card | https://www.pexels.com/photo/kangaroos-grazing-at-a-beach-in-australia-26988531/ | Frank Schrader | Pexels License (downloaded 23 Oct 2026; page says Batemans Bay, NSW) |
+| `skydive-*` | Skydiving trip card | https://www.pexels.com/photo/flying-parachute-in-the-air-2379020/ | Diana ✨ | Pexels License (downloaded 23 Oct 2026; location not stated, so it isn't captioned as any place) |
 
 ## Made for this site
 
-- `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `assets/img/icon-512.png`, the logo, all icons, and the Uluru, skydiving and wildlife card graphics were drawn for this site.
+- `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `assets/img/icon-512.png`, `assets/img/grain.png` (film-grain texture), the logo, all icons, the stamps, and the Uluru card graphic (sun and dunes, no depiction of the rock) were drawn or generated for this site.
+- `noosa-*` is also reused as the small framed photo in Stay & travel, and `whitehaven-hillinlet-*` as the background of the Enquire section.
 - `og-image.jpg` is the Hill Inlet photo above, with text set in Bricolage Grotesque (SIL Open Font License).
-- Fonts: Bricolage Grotesque and DM Sans, loaded from Google Fonts (SIL Open Font License).
+- Fonts (self-hosted in `assets/fonts/`, Latin subset woff2, SIL Open Font License): Fraunces (roman and italic, from Google Fonts), DM Sans and DM Mono. The share image `og-image.jpg` still uses Bricolage Grotesque.
